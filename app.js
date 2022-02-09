@@ -30,14 +30,16 @@ function showData(data) {
     output.innerHTML = `
     <ul class="song-list">
       ${data.data.map(song => `<li>
-                                <div>
-                                    <strong>
-                                    ${song.artist.name}
-                                    </strong> - ${song.title}
+                                <div class="song-flex">
+                                    <div>
+                                        <strong>
+                                        ${song.artist.name}
+                                        </strong> - ${song.title}
+                                    </div>
+                                    <div data-artist="${song.artist.name}" data-songtitle="${song.title}" class="get-lyrics">
+                                        get lyrics
+                                    </div>
                                 </div>
-                                <span data-artist="${song.artist.name}" data-songtitle="${song.title}">
-                                    get lyrics
-                                </span>
                              </li>    
                    `).join('')
         }   
@@ -50,7 +52,7 @@ output.addEventListener('click', e => {
     const clickedElement = e.target;
 
     //checking if clicked element is button or not
-    if (clickedElement.tagName === 'SPAN') {
+    if (clickedElement.className === 'get-lyrics') {
         const artist = clickedElement.getAttribute('data-artist');
         const songTitle = clickedElement.getAttribute('data-songtitle');
 

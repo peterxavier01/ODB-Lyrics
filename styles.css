@@ -8,6 +8,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/********** Nav styles ***********/
 .navbar {
     background-color: #1b2125;
     padding: 1em;
@@ -22,6 +24,8 @@ html {
     font-style: italic;
 }
 
+
+/********* Header styles ***********/
 #container {
     position: relative;
     width: 100%;
@@ -83,6 +87,8 @@ html {
     transition: .5s ease-in;
 }
 
+
+/*********** Output styles **********/
 .output h2 {
     margin-bottom: 1.5em;
     font-family: 'Playfair Display', serif;
@@ -94,59 +100,47 @@ html {
     margin-top: 20px;
     position: relative;
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2em;
 }
 
 output h2 strong {
     color: #2274A5;
-
 }
 
+
 .song-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 1em;
+    display: grid;
+    justify-content: stretch;
 }
 
 .song-list li {
-    padding-bottom: 1.3em;
-    margin-bottom: 20px;
-    width: 500px;
-    justify-content: space-evenly;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 18px;
-    text-decoration: overline;
-    position: relative;
     border-bottom: 3px solid #1b2125;
+    margin: 2em;
+    list-style: none;
 }
 
-.song-list li::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    left: -20px;
-    bottom: -4px;
-    height: 3px;
-    display: inline-block;
+.song-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    width: 100%;
 }
 
-.song-list li div {
-    float: left;
-    line-break: strict;
-}
-
-.song-list li div strong {
+.song-flex strong {
     color: #2274A5;
+    font-size: 1.2rem;
 }
 
-.song-list li span {
-    float: right;
+.song-flex div:nth-child(1) {
+    margin-right: 1em;
+}
+
+.song-flex div:nth-child(2) {
     border: none;
     font-size: 12px;
+    margin-left: 1em;
     border-radius: 12px;
     cursor: pointer;
     font-weight: 400;
@@ -154,10 +148,13 @@ output h2 strong {
     padding: 6px 10px;
     text-transform: capitalize;
     background-color: #2274A5;
+    width: 100%;
+    max-width: 100px;
+    height: 30px;
 }
 
 .lyrics {
-    margin-bottom: 2em;
+    margin: 0 1.3em;
     color: #111;
     font-size: 1.1rem;
     font-family: 'Lora', serif;
@@ -171,14 +168,17 @@ output h2 strong {
 }
 
 @media screen and (min-width: 768px) {
+    .song-list {
+        justify-content: center;   
+    }
+
     .song-list li {
-        width: 690px;
+        width: 600px;
     }
 
     #search {
         width: 500px;
     }
-   
 }
 
 @media screen and (min-width: 1024px) {
@@ -205,6 +205,48 @@ output h2 strong {
 
     #search-btn {
         width: 100px;
-    }
-  
+    } 
 }
+
+
+
+/********** Footer styles **********/
+footer {
+    padding-bottom: 1em;
+    background-color: #1b2125;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+   margin: .8em 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 2em;
+}
+
+.social-icons a:hover {
+    color: #2274A5;
+    transition: .5s ease-in;
+}
+
+.copyright {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0 1em;
+    text-align: center;
+}
+
