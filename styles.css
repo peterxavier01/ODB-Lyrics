@@ -15,10 +15,15 @@ html {
     padding: 1em;
 }
 
+.navbar img {
+    width: 30px;
+    height: 30px;
+}
+
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-style: italic;
@@ -108,7 +113,7 @@ html {
 }
 
 .output-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .song-list {
