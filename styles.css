@@ -103,10 +103,13 @@ html {
     margin-bottom: 2em;
 }
 
-output h2 strong {
+.output h2 strong {
     color: #2274A5;
 }
 
+.output-title {
+    font-size: 1.3rem;
+}
 
 .song-list {
     display: grid;
@@ -182,6 +185,11 @@ output h2 strong {
 
     #search {
         width: 500px;
+    }
+
+    
+    .output-title {
+        font-size: 1.5rem;
     }
 }
 
