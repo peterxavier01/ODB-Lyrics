@@ -72,7 +72,9 @@ async function getLyrics(artist, songTitle) {
                               ${artist}
                             </strong> - ${songTitle}
                         </h2>
-                        <p class="lyrics"> ${lyrics} </p>
+                        <div class="lyrics-wrapper">
+                          <p class="lyrics"> ${lyrics} </p>
+                        </div>
                       ` 
 }
 

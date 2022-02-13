@@ -63,6 +63,7 @@ html {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border: none;
+    text-transform: capitalize;
     outline: none;
     font-size: 1rem;
     position: relative;
@@ -161,17 +162,23 @@ html {
     height: 30px;
 }
 
+.lyrics-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
 .lyrics {
     margin: 0 1.3em;
     color: #111;
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-family: 'Lora', serif;
     font-weight: 400;
+    text-align: justify;
 }
 
 .output-name {
     color: #2274A5;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin: 0 1em;
 }
 
@@ -191,7 +198,6 @@ html {
     #search {
         width: 500px;
     }
-
     
     .output-title {
         font-size: 1.5rem;
