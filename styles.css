@@ -12,6 +12,11 @@ html {
 /********** Nav styles ***********/
 .navbar {
     background-color: #1b2125;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
     padding: 1em;
 }
 
