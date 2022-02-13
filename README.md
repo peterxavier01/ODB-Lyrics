@@ -7,12 +7,11 @@ https://odb-lyrics.netlify.app/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9aa00ed5-d1e8-421e-bcf0-00fa79e82049/deploy-status)](https://app.netlify.com/sites/odb-lyrics/deploys)
 
-## I'm a Developer, Designer and Freelancer!!
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/peterxavier01/ODB-Lyrics?style=for-the-badge)
+![AUR last modified](https://img.shields.io/aur/last-modified/google-chrome?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/peterxavier01/ODB-Lyrics?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/peterxavier01/ODB-Lyrics?style=for-the-badge)
 
-- 👯 I’m looking to collaborate with other content creators.
-- 😎 I’m currently learning ReactJs.
-- 🏫 2022 Goals: Learn more about web3.
-- 👨‍🏭 Fun fact: I love to paint, eat and sleep.
 
 ### Connect with me:
 [![website](./assets/twitter-light.svg)](https://twitter.com/peter_uadiale#gh-light-mode-only)
