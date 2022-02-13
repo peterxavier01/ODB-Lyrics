@@ -170,7 +170,7 @@ html {
 .lyrics {
     margin: 0 1.3em;
     color: #111;
-    font-size: .9rem;
+    font-size: .95rem;
     font-family: 'Lora', serif;
     font-weight: 400;
     text-align: justify;
@@ -178,7 +178,7 @@ html {
 
 .output-name {
     color: #2274A5;
-    font-size: 1.3rem;
+    font-size: 1.38rem;
     margin: 0 1em;
 }
 
